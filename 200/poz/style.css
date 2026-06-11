@@ -1,0 +1,47 @@
+.vmenu{
+	list-style: none;
+	width: 200px;
+}
+
+.vmenu a{
+	color: grey;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid gray;
+	padding: 6px 10px;
+	display: block;
+	margin-bottom: -1px;
+}
+.vmenu .current a{
+	background: gray;
+	color: aliceblue;
+}
+.vmenu a:hover{
+	background: silver;
+	color: aliceblue;
+}
+
+.gmenu{
+	margin-top: 50px;
+	list-style: none;
+	text-align: center;
+}
+
+.gmenu li{
+	display: inline;
+}
+.gmenu a{
+	color: grey;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid gray;
+	padding: 6px 10px;
+}
+.gmenu .current a{
+	background: gray;
+	color: aliceblue;
+}
+.gmenu a:hover{
+	background: silver;
+	color: aliceblue;
+}

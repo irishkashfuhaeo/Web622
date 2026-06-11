@@ -1,0 +1,42 @@
+/* .img, .one, .two{
+    width: 200px;
+    float: left;
+}
+.img img{
+    width: 100%;
+}
+.one{
+    color: green;
+}
+.two{
+    color: blue;
+}
+.tree{
+    clear: left;
+} */
+ html, body{
+    margin: 0;
+    padding: 0;
+ }
+ .container{
+    width: 700px;
+    margin: 0 auto;
+ }
+ .header{
+    background: palevioletred;
+    height: 100px;
+ }
+ .menu{
+    background: red;
+    width: 200px;
+    float: left;
+ }
+ .content{
+    background: purple;
+    margin-left: 202px;
+ }
+ .footer{
+    background: silver;
+    height: 50px;
+    clear: left;
+ }

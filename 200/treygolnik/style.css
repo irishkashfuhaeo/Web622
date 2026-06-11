@@ -1,0 +1,92 @@
+/* .rect1{
+    border-left: 100px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.rect2{
+    border-left: 100px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.rect3{
+    width: 0;
+    border-left: 100px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.rect4{
+    border-left: 100px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+} */
+.rect1, .rect2, .rect3, .rect4 {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+/* ВЕРХНИЙ треугольник (смотрит вверх) */
+.rect1 {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid black;
+    top: 0;
+    left: 50px;
+}
+
+/* НИЖНИЙ треугольник (смотрит вниз) */
+.rect2 {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid black;
+    bottom: 0;
+    left: 50px;
+}
+
+/* ЛЕВЫЙ треугольник (смотрит влево) */
+.rect3 {
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid black;
+    top: 50px;
+    left: 0;
+}
+
+/* ПРАВЫЙ треугольник (смотрит вправо) */
+.rect4 {
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid black;
+    top: 50px;
+    right: 0;
+}
+
+/* Квадрат в центре */
+body {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: black;
+    top: 50px;
+    left: 50px;
+}
+
+/* Отступы, чтобы всё было видно */
+body {
+    padding: 60px;
+}
+
+.rect1, .rect2, .rect3, .rect4, body::before {
+    outline: 1px solid white; /* маленькая белая граница, чтобы фигуры не сливались */
+}
+        

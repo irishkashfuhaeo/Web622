@@ -1,0 +1,15 @@
+.k1{
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+.k2{
+    transform: translate(100px, 200px);
+    transform: translateX(100px);
+    transform: translateY(100px);
+    transform: translate(50%);
+    transform: rotate(45deg);
+    transform: scale(0.3, 1.2);
+}

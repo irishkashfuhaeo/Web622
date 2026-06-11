@@ -1,0 +1,172 @@
+/* html, body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 100%;
+	min-width: 320px;
+}
+.header{
+	background-color: orange;
+	padding: 10px 0;
+	text-align: center;
+}
+.footer{
+	background-color: yellowgreen;
+	padding: 10px 0;
+	text-align: center;
+}
+.content{
+	margin: 10px 20px;	
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.content__left, .content__right, .content__center{
+	padding: 20px;
+	background: yellow;
+	box-sizing: border-box;
+	margin: 10px 0; 
+}
+
+.content__left, .content__right{
+    flex-basis: 200px;
+}
+
+.content__center{
+    flex-basis: calc(100% - 440px);
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+@media(max-width: 768px){
+    .content__center{
+        margin-right: 0;
+    }
+
+    .content__right{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 580px){
+    .content{
+        flex-direction: column;
+    }
+
+    .content__center{
+        margin-left: 0;
+    }
+
+    .content__left{
+        order: 1;
+    }
+
+    .content__right{
+        order: 2;
+    }
+} */
+
+/* .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 170px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label{
+    font-size: 2.5rem;
+    color: rgb(255, 162, 232);
+}
+
+.rating input:checked ~ label{
+    color: rgb(255, 83, 183);
+} */
+
+/* #check + label{
+    display: flex;
+    align-items: center;
+}
+
+#check{
+    display: none;
+}
+
+#check + label > span{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#check + label > span::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgb(235, 63, 120);
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    transition: all 0.2s;
+}
+
+#check:checked + label > span::before{
+    background: plum;
+    left: 27px;
+}
+
+button[disabled]:hover{
+    background: rgb(244, 214, 248);
+}
+
+.active{
+    display: none;
+}
+
+#check:checked ~ .active{
+    display: inline;
+    cursor: pointer;
+}
+
+#check:checked ~ .non-active{
+    display: none;
+} */
+
+.button{
+    width: 240px;
+    height: 77px;
+    border-radius: 39px;
+    border: none;
+    background: rgb(255, 138, 239);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button:hover{
+    background: rgb(221, 84, 217);
+    color: azure;
+    animation: shadow .6s infinite;
+}
+
+@keyframes shadow{
+    0%{
+        box-shadow: 0 0 10px 0px rgb(211, 98, 211), 0 0 10px 0px rgb(211, 98, 211);
+    }
+
+    100%{
+        box-shadow: 0 0 18px 6px transparent, 0 0 4px 50px transparent;
+    }
+}

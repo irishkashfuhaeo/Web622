@@ -1,0 +1,20 @@
+body{
+    background: url(../img/pattern.png);
+}
+table{
+    border: 1px solid silver
+    border-collapse: collapse;
+}
+td, th{
+    border: 2px solid silver;
+}
+td{
+    padding: 14px;
+}
+th{
+ background: url(../img/tablebg.jpg);
+ padding: 14px
+}
+.row{
+    background: silver;
+}

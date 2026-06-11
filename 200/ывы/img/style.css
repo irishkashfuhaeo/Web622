@@ -1,0 +1,209 @@
+/* button{
+    position: relative;
+    width: 210px;
+    border: none;
+    padding: 11px 15px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+}
+button::before{
+    content: "Наведи на меня";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0;
+
+    padding: 11px 15px;
+    background-color: aqua;
+    color: black;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+button:hover::before{
+    transform: scaleX(1);
+}
+
+.first::before{
+    transform-origin: 50%;
+}
+
+.second::before{
+    transform-origin: 100%;
+}
+
+.third::before{
+    transform-origin: -10%;
+} */
+
+/* .sidebar{
+    width: 200px;
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 5px 5px 12px 2px brown;
+    position: absolute;
+    left: -180px;
+    transition: left 3s;
+}
+
+.sidebar:hover{
+    left: -5px;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+
+.sidebar li{
+    border-bottom: 1px solid brown;
+    text-align: center;
+}
+
+.sidebar li:last-child{
+    border-bottom: none;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: brown;
+    padding: 20px;
+    display: block;
+}
+
+.sidebar a:hover{
+    background: gold;
+}
+
+.sidebar li:first-child a:hover{
+    border-top-right-radius: 6px;
+}
+
+.sidebar li:last-child a:hover{
+    border-bottom-right-radius: 6px;
+}
+
+.sidebar ul::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background: orange;
+    left: 200px;
+    top: 100px;
+    box-shadow: 5px 5px 12px 2px brown;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+} */
+
+/* .animation{
+    border: 1px solid brown;
+    background: gold;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* animation: anim 4s 3; */
+    /* animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+}
+
+/* .animation:hover{
+    /* animation: none; */
+    /* animation-play-state: paused;
+    cursor: pointer;
+} */ 
+
+/* @keyframes anim {
+    0%{
+        margin-left: 3px;
+        background: gold;
+    }
+    30%{
+        margin-top: 300px;
+        margin-left: 3px;
+        background: red;
+    }
+    60%{
+        margin-left: 300px;
+        background: yellow;
+        margin-top: 300px;
+    }
+    100%{
+        margin-left: 300px;
+        background: green;
+    }
+}  */ 
+
+/* .circle{
+    width: 120px;
+    height: 120px;
+    background: orange;
+    margin: 50px;
+    animation: turning 2s ease-out 1s infinite alternate;
+}
+
+@keyframes turning {
+    0%{
+        border-radius: 0 0 0 0;
+        transform: rotate(0deg);
+    }
+    25%{
+        border-radius: 50% 0 0 0;
+        transform: rotate(45deg);
+    }
+     50%{
+        border-radius: 50% 50% 0 0;
+        transform: rotate(90deg);
+    }
+     75%{
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(135deg);
+    }
+     100%{
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(180deg);
+    }
+}
+
+.circle:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+} */
+
+.portfolio li{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.descr{
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    background: black;
+    padding-top: 50px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    /* top: 100%; */
+    /* transform: scale(0) rotate(90deg); */
+}
+
+.portfolio li:hover .descr{
+    opacity: 1;
+    top: 0%;
+    /* transform: scale(1) rotate(0deg); */
+}

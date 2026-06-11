@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="image-box">
+        <picture>
+    <source media="(max-width: 480px)" srcset="image/1-300.jpg">
+    <source media="(max-width: 768px)" srcset="image/1-500.jpg">
+    <source media="(max-width: 1024px)" srcset="image/1-800.jpg">
+    <source media="(min-width: 1025px)" srcset="image/1-1200.jpg">
+    <img src="image/1-800.jpg" alt="Моё изображение">
+</picture>
+
+<div class="info" id="info"></div>
+    </div>
+</body>
+</html>
